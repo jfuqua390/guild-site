@@ -1,28 +1,12 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        guild-site
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="container-fluid">
+    <Header />
+    <div class="body">
+      This is where body will go.
+      <Calendar />
+    </div>
+    <div class="footer">
+      This is the footer
     </div>
   </div>
 </template>
@@ -32,13 +16,10 @@ export default {}
 </script>
 
 <style>
-.container {
+
+
+.header {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
